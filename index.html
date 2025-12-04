@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="nav-icon fa-solid fa-utensils mx-2"></i>
+          <div class="nav-caption d-flex flex-column">
+            <span class="fw-bold">What's For Dinner</span>
+            <p class="text-muted fs-6">Your daily meal inspiration</p>
+          </div>
+        </a>
+
+        <!-- Right Side Icons -->
+        <div class="nav-icons d-flex align-items-center">
+          <a href="#" class="text-dark me-3">
+            <i class="fa-solid fa-bookmark fs-5 text-muted"></i>
+          </a>
+          <a href="#" class="text-dark me-3">
+            <i class="fa-solid fa-clock fs-5 text-muted"></i>
+          </a>
+          <a href="#" class="text-dark me-3">
+            <i class="fa-solid fa-gear fs-5 text-muted"></i>
+          </a>
+          <img
+            src="assets/avatar-4.jpg"
+            alt="Avatar"
+            class="rounded-circle nav-avatar"
+            width="40"
+            height="40"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <!-- Two Column Layout -->
+      <div class="row g-4">
+        <!-- Left Column - Meal Photo -->
+        <div class="col-lg-5">
+          <div class="meal-image-container">
+            <img
+              id="mealImage"
+              src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600"
+              alt="Meal"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+
+          <!-- Quick Info Cards -->
+          <div class="row g-2 mt-3">
+            <div class="col-4">
+              <div class="info-card text-center p-3">
+                <i class="fa-solid fa-clock fs-4 orange-color"></i>
+                <div class="mt-2">
+                  <small class="d-block text-muted">Prep Time</small>
+                  <strong id="prepTime">15 min</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="info-card text-center p-3">
+                <i class="fa-solid fa-fire fs-4 pink-color"></i>
+                <div class="mt-2">
+                  <small class="d-block text-muted">Cook Time</small>
+                  <strong id="cookTime">20 min</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="info-card text-center p-3">
+                <i class="fa-solid fa-people-group fs-4 text-info"></i>
+                <div class="mt-2">
+                  <small class="d-block text-muted">Servings</small>
+                  <strong id="servings">4 people</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Meal Info -->
+        <div class="col-lg-7">
+          <!-- Recipe Title -->
+          <h2 id="recipeName" class="fw-bold mb-2">
+            Creamy Spaghetti Carbonara
+          </h2>
+          <p class="text-muted lead-1 mb-4">
+            <span id="recipeCategory">Main Dish</span>
+          </p>
+
+          <!-- Nav Tabs -->
+          <ul class="nav nav-tabs" id="recipeTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="ingredients-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ingredients"
+                type="button"
+                role="tab"
+              >
+                <i class="fa-solid fa-list-check me-1"></i>Ingredients
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="instructions-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#instructions"
+                type="button"
+                role="tab"
+              >
+                <i class="fa-solid fa-book me-1"></i>Instructions
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="nutrition-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nutrition"
+                type="button"
+                role="tab"
+              >
+                <i class="fa-solid fa-heart-pulse me-1"></i>Nutrition
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="tips-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#tips"
+                type="button"
+                role="tab"
+              >
+                <i class="fa-solid fa-lightbulb me-1"></i>Chef's Tips
+              </button>
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div
+            class="tab-content p-4 bg-white border border-top-0 rounded-bottom"
+            id="recipeTabContent"
+          >
+            <!-- Ingredients Tab -->
+            <div
+              class="tab-pane fade show active"
+              id="ingredients"
+              role="tabpanel"
+            >
+              <ul id="ingredientsList" class="list-group list-group-flush">
+                <!-- Filled by JavaScript -->
+              </ul>
+            </div>
+
+            <!-- Instructions Tab -->
+            <div class="tab-pane fade" id="instructions" role="tabpanel">
+              <ol
+                id="instructionsList"
+                class="list-group list-group-numbered list-group-flush"
+              >
+                <!-- Filled by JavaScript -->
+              </ol>
+            </div>
+
+            <!-- Nutrition Tab -->
+            <div class="tab-pane fade" id="nutrition" role="tabpanel">
+              <div id="nutritionContent">
+                <!-- Filled by JavaScript -->
+              </div>
+            </div>
+
+            <!-- Chef's Tips Tab -->
+            <div class="tab-pane fade" id="tips" role="tabpanel">
+              <div id="tipsList">
+                <!-- Filled by JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Get Random Recipe Button -->
+          <div class="text-center mt-4">
+            <button id="getRecipeBtn" class="btn btn-primary btn-lg px-5">
+              <i class="fa-solid fa-shuffle"></i> Get Random Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

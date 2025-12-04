@@ -1,0 +1,36 @@
+@media (max-width: 992px) {
+  .meal-image-container img {
+    height: 300px;
+  }
+
+  #recipeName {
+    font-size: 1.5rem;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+
+  .info-card {
+    padding: 10px !important;
+  }
+
+  .info-card i {
+    font-size: 1.2rem !important;
+  }
+
+  .info-card small {
+    font-size: 0.7rem;
+  }
+
+  .info-card strong {
+    font-size: 0.9rem;
+  }
+}
