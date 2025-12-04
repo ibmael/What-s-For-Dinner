@@ -16,7 +16,6 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container">
-        <!-- Logo and Brand -->
         <a class="navbar-brand d-flex align-items-center" href="#">
           <i class="nav-icon fa-solid fa-utensils mx-2"></i>
           <div class="nav-caption d-flex flex-column">
@@ -25,7 +24,6 @@
           </div>
         </a>
 
-        <!-- Right Side Icons -->
         <div class="nav-icons d-flex align-items-center">
           <a href="#" class="text-dark me-3">
             <i class="fa-solid fa-bookmark fs-5 text-muted"></i>
@@ -47,11 +45,9 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- header -->
     <div class="container my-5">
-      <!-- Two Column Layout -->
       <div class="row g-4">
-        <!-- Left Column - Meal Photo -->
         <div class="col-lg-5">
           <div class="meal-image-container">
             <img
@@ -62,7 +58,6 @@
             />
           </div>
 
-          <!-- Quick Info Cards -->
           <div class="row g-2 mt-3">
             <div class="col-4">
               <div class="info-card text-center p-3">
@@ -94,9 +89,7 @@
           </div>
         </div>
 
-        <!-- Right Column - Meal Info -->
         <div class="col-lg-7">
-          <!-- Recipe Title -->
           <h2 id="recipeName" class="fw-bold mb-2">
             Creamy Spaghetti Carbonara
           </h2>
@@ -104,7 +97,6 @@
             <span id="recipeCategory">Main Dish</span>
           </p>
 
-          <!-- Nav Tabs -->
           <ul class="nav nav-tabs" id="recipeTabs" role="tablist">
             <li class="nav-item" role="presentation">
               <button
@@ -156,48 +148,34 @@
             </li>
           </ul>
 
-          <!-- Tab Content -->
           <div
             class="tab-content p-4 bg-white border border-top-0 rounded-bottom"
             id="recipeTabContent"
           >
-            <!-- Ingredients Tab -->
             <div
               class="tab-pane fade show active"
               id="ingredients"
               role="tabpanel"
             >
-              <ul id="ingredientsList" class="list-group list-group-flush">
-                <!-- Filled by JavaScript -->
-              </ul>
+              <ul id="ingredientsList" class="list-group list-group-flush"></ul>
             </div>
 
-            <!-- Instructions Tab -->
             <div class="tab-pane fade" id="instructions" role="tabpanel">
               <ol
                 id="instructionsList"
                 class="list-group list-group-numbered list-group-flush"
-              >
-                <!-- Filled by JavaScript -->
-              </ol>
+              ></ol>
             </div>
 
-            <!-- Nutrition Tab -->
             <div class="tab-pane fade" id="nutrition" role="tabpanel">
-              <div id="nutritionContent">
-                <!-- Filled by JavaScript -->
-              </div>
+              <div id="nutritionContent"></div>
             </div>
 
-            <!-- Chef's Tips Tab -->
             <div class="tab-pane fade" id="tips" role="tabpanel">
-              <div id="tipsList">
-                <!-- Filled by JavaScript -->
-              </div>
+              <div id="tipsList"></div>
             </div>
           </div>
 
-          <!-- Get Random Recipe Button -->
           <div class="text-center mt-4">
             <button id="getRecipeBtn" class="btn btn-primary btn-lg px-5">
               <i class="fa-solid fa-shuffle"></i> Get Random Recipe
